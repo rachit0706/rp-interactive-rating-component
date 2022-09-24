@@ -21,7 +21,6 @@ let selectedStar;
 
 ratingSelectArea.addEventListener('click', function (e) {
     selectedStar = Number(e.target.id.split('-')[1]);
-    console.log(selectedStar)
     yourRating.textContent = `Your rating is ${selectedStar} out of 5`;
 
     for (let i = 1; i <= 5; i++) {

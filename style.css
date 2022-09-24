@@ -18,10 +18,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .rating-card {
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     background-image:
         radial-gradient(circle at top,
             hsl(216, 47%, 31%),
@@ -29,8 +30,9 @@ main {
             hsl(215, 20%, 18%));
     width: 25%;
     height: auto;
-    padding: 2.5rem;
+    padding: 2rem;
 }
+
 
 .rating-state {
     display: flex;
@@ -133,6 +135,40 @@ h1 {
     text-align: center;
 }
 
+@media screen and (min-width: 375px) {
+    .rating-card {
+        width: 70%;
+    }
+
+    .your-rating {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .rating-card {
+        width: 60%;
+    }
+
+    .your-rating {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 786px) {
+    .rating-card {
+        width: 40%;
+    }
+
+    .your-rating {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rating-card {
+        width: 25%;
+    }
+}
 .attribution {
     font-size: 11px;
     text-align: center;
