@@ -28,9 +28,10 @@ main {
             hsl(216, 47%, 31%),
             hsl(214, 27%, 24%),
             hsl(215, 20%, 18%));
-    width: 25%;
+    max-width: 22rem;
+    margin: 1.6rem;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -74,8 +75,8 @@ h1 {
 }
 
 .star-button {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     background-color: hsl(216, 38%, 31%);
     display: flex;
@@ -135,40 +136,6 @@ h1 {
     text-align: center;
 }
 
-@media screen and (min-width: 375px) {
-    .rating-card {
-        width: 70%;
-    }
-
-    .your-rating {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .rating-card {
-        width: 60%;
-    }
-
-    .your-rating {
-        width: 70%;
-    }
-}
-@media screen and (min-width: 786px) {
-    .rating-card {
-        width: 40%;
-    }
-
-    .your-rating {
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .rating-card {
-        width: 25%;
-    }
-}
 .attribution {
     font-size: 11px;
     text-align: center;
